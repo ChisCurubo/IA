@@ -25,4 +25,4 @@ print(f"✅ Servidor corriendo en: http://{env_host}:{app_port} (modo: {env_mode
 from app.api.routes import bert_router, crawl_router
 
 app.include_router(bert_router, prefix="/bert", tags=["BERT NLP"])
-app.include_router(crawl_router, prefix="/scraper", tags=["Scraping"])
+app.include_router(crawl_router, prefix="/crawl", tags=["Crawling"])
