@@ -22,7 +22,9 @@ env_mode = "debug" if debug_mode else "production"
 print(f"✅ Servidor corriendo en: http://{env_host}:{app_port} (modo: {env_mode})")
 
 # Opcional: Importar y registrar routers aquí
-from app.api.routes import bert_router, crawl_router
+from app.api.routes import bert_router, crawl_router, scrapping_router
 
 app.include_router(bert_router, prefix="/bert", tags=["BERT NLP"])
 app.include_router(crawl_router, prefix="/crawl", tags=["Crawling"])
+app.include_router(scrapping_router, prefix="/scrapping", tags=["Scrapping"])
+
