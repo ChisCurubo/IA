@@ -59,3 +59,7 @@ htmlcov/
 # Archivos de compilación de Cython
 *.c
 *.cpp
+
+# Mantener la carpeta pero ignorar su contenido
+/audios/*
+!/audios/.gitkeep
